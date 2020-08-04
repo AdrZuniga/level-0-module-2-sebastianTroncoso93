@@ -14,6 +14,8 @@ public class IntroToRandom {
 		//   Create an object of the Random class
 		//	 use .nextInt() to get a random number
 		
+		
+		//
 
 		//4. Limit the random number between 0 and 100
 
