@@ -8,14 +8,19 @@ import java.util.Random;
 public class IntroToRandom {
 	public static void main(String[] args) {
 		
-		int r = 0;
+	
 		
 		//3. Now make r random. 
 		//   Create an object of the Random class
 		//	 use .nextInt() to get a random number
+		Random ran = new Random();
+		int randomNumber = ran.nextInt(45) -50;
 		
+		System.out.println(randomNumber);
 		
-		//
+		int random = ran.nextInt((75-25)+1) + 25;
+		System.out.println(randomNumber);
+		
 
 		//4. Limit the random number between 0 and 100
 
