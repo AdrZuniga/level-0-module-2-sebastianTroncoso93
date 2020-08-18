@@ -17,14 +17,23 @@ public class Magic8Ball {
 		
 		System.out.println(randomNumber);
 			
-		String input = JOptionPane.showInputDialog("What is your question");
+		String input = JOptionPane.showInputDialog("What is your question. (yes and no questions only)");
 		
 		if (randomNumber == 0) {
 			JOptionPane.showMessageDialog(null, "Yes");
 		}
 		
+		if (randomNumber == 1) {
+			JOptionPane.showMessageDialog(null, "No");
+		}
 		
+		if (randomNumber == 2) {
+			JOptionPane.showMessageDialog(null, "Maybe you should ask Google");
+		}
 		
+		if (randomNumber == 3) {
+			JOptionPane.showMessageDialog(null, "Better save it to someone");
+		}
 		
 		
 		

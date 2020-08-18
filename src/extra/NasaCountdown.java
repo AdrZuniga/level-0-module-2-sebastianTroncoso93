@@ -15,9 +15,11 @@ package extra;
 public class NasaCountdown {
 	public static void main(String[] args) throws InterruptedException {
 		// 2. Use a pop-up to ask the user where to start counting from
-
+		system.print
 		// 3. Change the countdown to use the new starting point
-		
+		for(int countDown = 11; countDown >= 0; countDown--) {
+			// syso the countDown
+		}
 		// 1. Print a countdown from 10 to 0 on the console
 	
 			// 4. Use the speak method to hear the countdown.
