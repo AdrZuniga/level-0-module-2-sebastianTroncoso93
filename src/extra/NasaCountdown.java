@@ -3,7 +3,9 @@
 
 package extra;
 
- /* NASA wants to shoot a rocket into orbit. 
+import javax.swing.JOptionPane;
+
+/* NASA wants to shoot a rocket into orbit. 
   * Somebody has to do the countdown – or the rocket won’t launch.
  * 
  * The ground control chief will tell you where to start – then count down to 0. 
@@ -13,14 +15,21 @@ package extra;
  **/
 
 public class NasaCountdown {
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 		// 2. Use a pop-up to ask the user where to start counting from
-		system.print
+		String input = JOptionPane.showInputDialog("where do you want to start counting");
 		// 3. Change the countdown to use the new starting point
-		for(int countDown = 11; countDown >= 0; countDown--) {
+		for(int countDown = Integer.parseInt(input); countDown >= 0; countDown--) {
+			System.out.println(countDown);
 			// syso the countDown
+			
+			
+		
+	
 		}
 		// 1. Print a countdown from 10 to 0 on the console
+	
+		System.out.println("blast off!");
 	
 			// 4. Use the speak method to hear the countdown.
 		

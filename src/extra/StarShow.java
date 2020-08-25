@@ -13,17 +13,35 @@ public class StarShow {
 	
 	void makeStars() {
 		
-		drawStar(150);	//5. delete this line. you will draw the star again in step 8.
+		 //5. delete this line. you will draw the star again in step 8.
 		// 13. Set the speed to 8
+		robot.setSpeed(8);
 
 		// 6. Make a variable to hold the X position of the Robot and set it to 10
+		robot.setX(10);
 
 		// 7. Make a variable to hold the Y position of the Robot and set it to 600
+		robot.setY(600);
 
 		// 8. Make a variable to hold the star size and set it to 25
+		int starSize = 25;
 
 		// 12. Repeat the steps #19 to #18, 30 times
-
+		for(int starShow = 0;starShow < 30;starShow ++ ) {
+			robot.setPenWidth(starShow);
+			robot.setRandomPenColor();
+			robot.setX(10);
+			robot.setY(600);
+			robot.setX(10 + starSize);
+			
+			
+			
+		}
+		
+		
+		
+		
+		
 			// 19. Set the pen width to i 
 	
 			// 10. Set the X position of the robot to your X variable
@@ -45,6 +63,8 @@ public class StarShow {
 	}
 
 	private void drawStar(int starSize) {
+		
+		
 		// 2. Put the robot's pen down
 
 		// 4. Repeat both commands 5 times. See Figure 1 at http://bit.ly/star-show
