@@ -17,7 +17,14 @@ public class SafeCracker {
 		/*
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
+		 * 
+		 * Use a for loop to check all number from 0 to 10000000
 		 */
+		
+		for(int i = 0; i < 10000000; i += 1) {
+			tryCode(i);
+		
+		}
 		
 
 	}
@@ -32,6 +39,10 @@ public class SafeCracker {
 			playTheSoundOfSuccess();
 			System.exit(0);
 		}
+		
+		//secret(i) 
+		
+		
 	}
 
 	private static void playTheSoundOfSuccess() {
